@@ -1,0 +1,44 @@
+.input{
+    position: relative;
+    padding: 5px;
+    margin-block: 10px;
+}
+
+.input input{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+
+.input label{
+    font-size: 18px;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input textarea{
+    resize: none;
+    width: 100%;
+    min-width: 100%;
+    display: block;
+    border: 1px solid var(--red);
+    padding: 8px 16px;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 5px;
+    font-family: inherit;
+    color: var(--dark);
+    height: 180px;
+}
+
+.input input[type="submit"]{
+    background-color: var(--red);
+    color: white;
+    cursor: pointer;
+}

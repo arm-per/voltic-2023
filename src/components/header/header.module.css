@@ -1,0 +1,23 @@
+.header{
+    background-color: var(--dark);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px 2px #0009;
+}
+
+.container{
+    padding-inline: 21px;
+    padding-block: 10px;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo{
+    width: 150px;
+}

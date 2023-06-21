@@ -1,0 +1,12 @@
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    box-sizing: border-box;
+}
+
+.link:hover{
+    color: var(--red);
+}

@@ -1,0 +1,77 @@
+.imageCard{
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 21px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-block: 10px 20px;
+}
+
+.bgImage{
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center top;
+}
+
+.textZone{
+    background-image: linear-gradient(to bottom, #004370cc 70%, transparent 100%);
+    padding-inline: 30px;
+    padding-block: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    line-height: 140%;
+    font-size:  18px;
+}
+
+
+.textZone h2{
+    font-size: 32px;
+}
+
+
+
+.textZone h2{
+    margin: 0;
+}
+
+.textZone h2::after{
+    content: '';
+    display: block;
+    background-color: red;
+    width: 60px;
+    height: 3px;
+    margin-inline: auto;
+    margin-top: 12px;
+}
+
+@media (min-width: 480px){
+    .bgImage{
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        background-position: center;
+    }
+    .textZone {
+        background-image: linear-gradient(to right, #004370cc 70%, transparent 100%);
+        padding-right: 40px;
+    }
+    .textZone::after{
+        right: 25px;
+    }
+}
+
+@media (min-width: 720px){
+    .textZone{
+        padding-right: 150px;
+    }
+    .textZone::after{
+        right: 120px;
+    }
+    .bgImage{
+        background-position: center right;
+    }
+}

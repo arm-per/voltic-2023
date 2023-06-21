@@ -1,0 +1,96 @@
+.serviceCard{
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 21px;
+    margin-block: 50px;
+}
+
+.serviceCardContainer{
+    background: var(--dark);
+    border-radius: 5px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.illustration{
+    position: relative;
+    height: 100%;
+}
+
+.illustration img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    height: 100%;
+}
+
+.illustration::after{
+    content: '';
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -30px;
+    background-color: var(--dark);
+    transform: skew(5deg);
+    box-shadow: -7px 0 var(--red);
+}
+
+.content{
+    position: relative;
+    z-index: 200;
+    color: white;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h2{
+    font-size: 32px;
+    margin: 0;
+}
+
+.content ul{
+    font-size: 20px;
+    line-height: 140%;
+    padding: 0;
+    columns: 2;
+}
+.content p{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.content ul li{
+    margin-bottom: 10px;
+}
+
+.content ul li::marker{
+    font-size: 40px;
+}
+
+@media (max-width: 850px){
+    .serviceCardContainer{
+        grid-template-columns: 1fr;
+    }
+    .illustration img{
+        height: 300px;
+        object-position: center;
+    }
+    .illustration::after {
+        width: 100%;
+        height: 80px;;
+        top: calc(100% - 20px);
+        right: 0;
+        transform: skewY(5deg);
+        box-shadow: 0 -7px var(--red);
+    }
+    .content ul{
+        columns: 1;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,31 @@
+.mobileMenu{
+
+}
+
+.mobileMenu_button{
+    background: none;
+    border: none;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 5px;
+    align-items: center;
+    width: 60px;
+}
+
+.mobileMenu_button:hover{
+    background-color: var(--medium);
+
+}
+
+.mobileMenu_button_label{
+    font-size: 12px;
+}
+
+.mobileMenu_button_icon{
+    width: 35px;
+    height: 35px;
+}

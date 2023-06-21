@@ -1,0 +1,27 @@
+.customerContainer{
+    display: flex;
+    max-width: 1200px;
+    margin-inline: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer{
+    background-color: white;
+    padding-block: 20px;
+}
+
+.customer h2{
+    font-size: 24px;
+    text-align: center;
+    color: var(--dark)
+}
+
+.customerContainer img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}

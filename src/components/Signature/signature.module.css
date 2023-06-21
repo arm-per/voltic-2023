@@ -1,0 +1,7 @@
+.signature{
+    color: white;
+    padding: 20px;
+    background-color: var(--darkest);
+    text-align: center;
+    font-size: 20px;
+}

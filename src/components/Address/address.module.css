@@ -1,0 +1,51 @@
+.address{
+    color: white;
+    padding-inline: 21px;
+    padding-block: 20px;
+}
+
+
+.address iframe{
+    max-width: 100%;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.addressGrid{
+    display: flex;
+}
+
+.buttonContainer {
+    display: flex;
+    width: 100%;
+    gap: 2px;
+}
+.buttonContainer button{
+    background-color: var(--medium);
+    color: white;
+    padding: 12px 16px;
+    flex: 1;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.buttonContainer button:hover{
+    background-color: var(--darkest);
+}
+
+.buttonSelected{
+    background-color: var(--darkest)!important;
+}
+
+.buttonContainer button:nth-child(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.buttonContainer button:nth-child(2){
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+

@@ -1,0 +1,65 @@
+.valueCard{
+    background-color: var(--medium);
+    padding: 20px;
+    color: white;
+    line-height: 140%;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.valueCard ul{
+    padding-inline: 15px;
+    text-align: left;
+    columns: 2;
+    margin: 0;
+}
+
+.valueCard li::marker{
+    color: var(--red);
+}
+
+.valueCard p{
+    font-size: 17px;
+    line-height: 150%;
+    padding-bottom: 5px;
+}
+
+.valueCard::before{
+    display: block;
+    content: '';
+    border-left: 4px solid var(--red);
+    border-top: 4px solid var(--red);
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.valueCard::after{
+    display: block;
+    content: '';
+    border-right: 4px solid var(--red);
+    border-bottom: 4px solid var(--red);
+    border-left: 4px solid transparent;
+    border-top: 4px solid transparent;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+.cardsContainer{
+    max-width: 1200px;
+    padding-inline: 21px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+    display: grid;
+    margin-inline: auto;
+}
+
+

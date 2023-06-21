@@ -1,0 +1,21 @@
+.whatsappButton{
+    width: 60px;
+    height: 60px;
+    background-color: #11282a;
+    border: none;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 2px #030909;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 998;
+}
+
+.whatsappButton svg{
+    display: block;
+}

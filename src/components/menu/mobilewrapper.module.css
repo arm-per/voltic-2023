@@ -1,0 +1,33 @@
+.container{
+    position: fixed;
+    height: calc(100vh - 75px);
+    width: 100vw;
+    left: 0;
+    top: 75px;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #09141966;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+}
+
+.container a{
+    padding: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.container a:hover{
+    background-color: var(--dark)
+}
+
+.show {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,59 @@
+.container{
+    margin-inline: auto;
+    max-width: 1200px;
+}
+.carrousel{
+    max-width: 100%;
+    margin-inline: 21px;
+    margin-block: 30px;
+    overflow: hidden;
+
+}
+
+.banners{
+    display: flex;
+    animation: 40s slider-movement ease-in-out infinite forwards ;
+}
+
+.bannerContainer{
+    display: block;
+    max-width: 100%;
+    margin-inline: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    width:100%;
+    flex-shrink: 0;
+}
+
+.bannerContainer img{
+    display: block;
+    max-width: 100%;
+}
+
+
+@keyframes slider-movement{
+    0%{
+        transform: translateX(-0%);
+    }
+    24% {
+        transform: translateX(-0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    49% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    74% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    99% {
+        transform: translateX(-300%);
+    }
+}

@@ -1,0 +1,16 @@
+:root{
+    font-family: sans-serif;
+
+    --darkest: #091419;
+    --dark: #10232c;
+    --medium: #00435d;
+    --red: #E3051E;
+
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--darkest);
+    margin: 0;
+    padding: 0;
+}
